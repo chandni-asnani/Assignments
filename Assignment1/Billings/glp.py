@@ -23,7 +23,7 @@ class Glp():
                         charge = 70
 
                 result = res1 + charge
-                print(result)
+                return result
 
 
                 

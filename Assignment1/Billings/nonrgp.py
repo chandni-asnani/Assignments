@@ -18,6 +18,6 @@ class Nonrgp():
         elif kw in range(5,16):
             res2 = 90
         result = res1 + res2
-        print(result)
+        return result
 
             

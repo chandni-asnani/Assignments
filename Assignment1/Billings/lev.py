@@ -9,4 +9,4 @@ class Lev():
         res1 = self.i *(420/100)
         res2 = 25
         result = res1 + res2
-        print(result)
+        return result

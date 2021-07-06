@@ -6,4 +6,4 @@ class SL():
 
     def cal(self):
         result = self.i* (430/100)
-        print(result)
+        return result

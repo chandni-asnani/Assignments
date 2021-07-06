@@ -34,7 +34,7 @@ class RGP():
                 charge == 65
 
             result = res1 + charge
-            print(result)
+            return result
 
         
     def bpl(self):
@@ -56,7 +56,7 @@ class RGP():
 
             charge = 5
             result = res1 +  charge
-            print(result)
+            return result
         
 
     

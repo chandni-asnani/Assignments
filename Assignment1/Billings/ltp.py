@@ -12,5 +12,5 @@ class Ltp():
             bhp = int(input())
             bhp*= 10
             result = res1 + bhp
-            print(result)
+            return result
 

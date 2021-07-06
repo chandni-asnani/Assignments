@@ -8,4 +8,4 @@ class Tmp():
         res1 = self.i*(510/100)
         res2 = 25*30
         result = res1 +res2
-        print(result)
+        return result
