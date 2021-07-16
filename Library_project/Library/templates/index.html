@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <p>Welcome to library! {{username}}</p>
+    <a href="{% url 'issuebook' %}">Issue a Book</a>
+
+    {% if book %}
+        <table>
+            <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Date</th>
+            </tr>
+
+            {% for b in book %} 
+            <tr>
+            <td>{{b.book.book_name}}</td>
+            <td>{{b.book.author_name}}</td>
+            <td>{{b.date}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+
+    {%endif%}
+
+    <br>
+    <br>
+    <a href="{% url 'logout' %}">Log Out</a>
+
+
+
+
+</body>
+</html>
